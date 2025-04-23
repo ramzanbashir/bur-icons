@@ -1,0 +1,42 @@
+.Navbar-heading{
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.Navbar-icons{
+    display: flex;
+    padding: 3px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Navbar-icons>img{
+    width: 40px;
+    height: 40px;
+    cursor :pointer;
+}
+
+.Navbar-icons *{
+   transition: scale 300ms;
+   transition: filter 300ms;
+}
+.Navbar-icons *:hover{
+    scale: 1.2;
+    transition: scale 300ms;
+}
+
+.Navbar-icons:has(:hover) :not(:hover){
+    scale: 0.8;
+    filter: blur(2px);
+}
+    
