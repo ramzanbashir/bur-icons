@@ -1,1 +1,1 @@
-# bur-icons
+# blur-icons
